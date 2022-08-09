@@ -1,33 +1,34 @@
 import styles from '../styles/Home.module.css';
 import Box from '@mui/material/Box';
 import Image from 'next/image';
+import Layout from '../components/Layout';
 
 const mouseOver = () => {
 
   document.getElementById("alphabeth1").style.color = "#1B1B1B";
-  document.getElementById("alphabeth2").style.color = "red";
-  document.getElementById("alphabeth3").style.color = "red";
-  document.getElementById("alphabeth4").style.color = "red";
-  document.getElementById("alphabeth5").style.color = "red";
-  document.getElementById("alphabeth6").style.color = "red";
+  document.getElementById("alphabeth2").style.color = "#FCBC0F";
+  document.getElementById("alphabeth3").style.color = "#FCBC0F";
+  document.getElementById("alphabeth4").style.color = "#FCBC0F";
+  document.getElementById("alphabeth5").style.color = "#FCBC0F";
+  document.getElementById("alphabeth6").style.color = "#FCBC0F";
 }
 
 
 const mouseOut = () => {
   document.getElementById("alphabeth1").style.color = "#787878";
-  document.getElementById("alphabeth2").style.color = "red";
-  document.getElementById("alphabeth3").style.color = "red";
-  document.getElementById("alphabeth4").style.color = "red";
-  document.getElementById("alphabeth5").style.color = "red";
-  document.getElementById("alphabeth6").style.color = "red";
+  document.getElementById("alphabeth2").style.color = "#F85F36";
+  document.getElementById("alphabeth3").style.color = "#F85F36";
+  document.getElementById("alphabeth4").style.color = "#F85F36";
+  document.getElementById("alphabeth5").style.color = "#F85F36";
+  document.getElementById("alphabeth6").style.color = "#F85F36";
 }
 
 export default function Home() {
 
   return (
-    <div>
+    <Layout>
       <Box
-         sx={{
+        sx={{
           boxShadow: 3,
           // width: '100%',
           height: '25rem',
@@ -82,6 +83,6 @@ export default function Home() {
         }}
       >
       </Box>
-    </div>
+    </Layout>
   )
 }
