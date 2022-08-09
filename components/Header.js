@@ -6,15 +6,27 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
+import { makeStyles } from '@mui/styles';
 
+const useStyles = makeStyles((theme) => {
+    return{
+        appbar:{
+            width: '70%',
+            position: "fixed",
+            marginRight: 250
+        },
+        // toolbar: theme.mixins.toolbar
+    }
+})
 
   export default function Header() {
+    const classes = useStyles();
     return (
-      <Box sx={{ 
+        <div className={classes.toolbar}>
+            <Box sx={{ 
         flexGrow: 1,
-        
         }}>
-        <AppBar position="fixed" style={{backgroundColor:'#F85F36'}}>
+        <AppBar className={classes.appbar} style={{backgroundColor:'#F85F36'}} >
           <Toolbar>
             <IconButton
               size="large"
@@ -32,5 +44,8 @@ import Button from '@mui/material/Button';
           </Toolbar>
         </AppBar>
       </Box>
+
+        </div>
+      
     );
   }

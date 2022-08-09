@@ -31,7 +31,7 @@ export default function Home() {
         sx={{
           boxShadow: 3,
           // width: '100%',
-          height: '25rem',
+          height: '20rem',
           textAlign: 'center',
           p: 5,
           fontSize: '3rem',
@@ -43,7 +43,6 @@ export default function Home() {
               height={250}
               className={styles.round} 
             />
-        <h2>WijiPe</h2>
       </Box>
       <Box 
         sx={{
@@ -54,12 +53,12 @@ export default function Home() {
           // color: (theme) =>
           // theme.palette.mode === 'dark' ? 'grey.300' : 'grey.800',
           p: 10,
-          pl: 35,
-          pr: 35,
+          pl: 40,
+          pr: 40,
           // m: 15,
           // ml:60,
           textAlign: 'center',
-          fontSize: '1.3rem',
+          fontSize: '1rem',
           fontWeight: '700',
           // border: 1,
           position: 'relative',
