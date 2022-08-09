@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400&family=Secular+One&display=swap');
 
-.container {
+.container1 {
+  font-family:'Secular One';
+  /* font-size: 30px; */
+  /* margin: 0 auto; */
+}
+
+.container2 {
   /* margin: 0 auto; */
   /* margin-top: 200px; */
   /* padding: 5rem 5rem; */
@@ -12,5 +18,7 @@
   /* box-shadow: #888888(0, 0, 0, 0.35) 0px 5px 15px; */
   /* box-shadow: white(255, 255, 255, 0.1) 0px 1px 1px 0px inset, white(50, 50, 93, 0.25) 0px 50px 100px -20px, white(0, 0, 0, 0.3) 0px 30px 60px -30px; */
 }
-
+.round{
+  border-radius: 100%;
+}
 
