@@ -3,7 +3,7 @@ import {useEffect} from 'react'
 
 const showBall = () => {
 
-  const colors = ["#3CC157", "#2AA7FF", "#1B1B1B", "#FCBC0F", "#F85F36"];
+  const colors = ["#2AA7FF", "#1B1B1B", "#FCBC0F","#F85F36"];
 
   const numBalls = 30;
   const balls = [];
