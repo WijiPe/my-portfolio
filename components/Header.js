@@ -27,7 +27,11 @@ const useStyles = makeStyles((theme) => {
     return{
         appbar:{
             position: "fixed",
-        }
+            height: 45,
+        },
+        minHeight: {
+            minHeight: 45,
+          },
     }
 })
 
@@ -37,11 +41,12 @@ export default function Header() {
     return (
         <Box>
             <AppBar className={classes.appbar} style={{backgroundColor:'#F85F36', color: 'black'}}>
-                <Toolbar sx={{  
+                <Toolbar className={classes.minHeight} sx={{  
                     display: 'flex', 
                     flexDirection: 'row',  
                     justifyContent: 'flex-end', 
-                    gap: 10
+                    gap: 10,
+                    height: 40,
                 }}>
                     <Typography variant="h6" component="div">
                         <Link href="">
