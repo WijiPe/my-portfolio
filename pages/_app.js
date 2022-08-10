@@ -45,7 +45,6 @@ balls.forEach((el, i, ra) => {
 });
 }
 
-
 function MyApp({ Component, pageProps }) {  
 
   useEffect(()=> {

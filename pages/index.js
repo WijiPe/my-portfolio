@@ -33,7 +33,6 @@ export default function Home() {
 
   return (
     <Layout>
-      <div className={styles.transition}>
       <Box 
         sx={{
           boxShadow: 3,
@@ -93,7 +92,7 @@ export default function Home() {
           gap: 10,
         }}
       >
-        Me
+        About Me
       </Box>
       <Box id="section2"
         sx={{
@@ -117,10 +116,32 @@ export default function Home() {
           gap: 10,
         }}
       >
-        not Me
+        my project
       </Box>
-      </div>
-      
+      <Box id="section3"
+        sx={{
+          boxShadow: 3,
+          width: '100%',
+          height: '30rem',
+          // bgcolor: (theme) => (theme.palette.mode === 'dark' ? '#101010' : '#212121'),
+          // color: (theme) =>
+          // theme.palette.mode === 'dark' ? 'grey.300' : 'grey.800',
+          p: 10,
+          // m: 15,
+          mt: 22,
+          textAlign: 'center',
+          // fontSize: '1rem',
+          fontWeight: '700',
+          // border: 1,
+          position: 'relative',
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'center',
+          gap: 10,
+        }}
+      >
+        contact Me
+      </Box>
     </Layout>
   )
 }

@@ -10,10 +10,10 @@ import Link from 'next/link';
 
 const scroll2El = elID => {
     window.scrollTo({
-      top: document.getElementById(elID).offsetTop - 60,
-      behavior: 'smooth',
+        top: document.getElementById(elID).offsetTop - 60,
+        behavior: 'smooth',
     });
-  };
+};
 
 const onBtnClick = (e) => {
     e.preventDefault();
@@ -35,31 +35,29 @@ export default function Header() {
     
     const classes = useStyles();
     return (
-        <Box sx={{ 
-            flexGrow: 1,
-            }}>
-            <AppBar className={classes.appbar} style={{backgroundColor:'#F85F36'}} >
-                <Toolbar>
-                    <IconButton
-                        size="large"
-                        edge="start"
-                        color="inherit"
-                        aria-label="menu"
-                        sx={{ mr: 2 }}
-                    >       
-                        <MenuIcon />
-                    </IconButton>
-                    <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+        <Box>
+            <AppBar className={classes.appbar} style={{backgroundColor:'#F85F36', color: 'black'}}>
+                <Toolbar sx={{  
+                    display: 'flex', 
+                    flexDirection: 'row',  
+                    justifyContent: 'flex-end', 
+                    gap: 10
+                }}>
+                    <Typography variant="h6" component="div">
                         <Link href="">
-                            <a goto="section1" onClick={onBtnClick}>contact</a>
+                            <a goto="section1" onClick={onBtnClick}>about me</a>
                         </Link>
                     </Typography>
-                    <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                    <Typography variant="h6" component="div">
                         <Link href="" >
-                            <a goto="section2" onClick={onBtnClick}>project</a>
+                            <a goto="section2" onClick={onBtnClick}>my project</a>
                         </Link>
                     </Typography>
-                    <Button color="inherit" >Login</Button>
+                    <Typography variant="h6" component="div">
+                        <Link href="" >
+                            <a goto="section3" onClick={onBtnClick}>contact me</a>
+                        </Link>
+                    </Typography>
                 </Toolbar>
             </AppBar>
         </Box>
