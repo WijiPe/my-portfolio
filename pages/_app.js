@@ -3,7 +3,9 @@ import {useEffect} from 'react'
 
 const showBall = () => {
 
-  const colors = ["#2AA7FF", "#1B1B1B", "#FCBC0F","#F85F36"];
+  // const colors = ["#2AA7FF", "#1B1B1B", "#FCBC0F","#F85F36"];
+  const colors = ["#A35709", "#FF8303", "#F0E3CA", "#787878"];
+  // const colors = ["#787878", "#04293A", "#064663", "#ECB365"];
 
   const numBalls = 30;
   const balls = [];
@@ -17,6 +19,8 @@ const showBall = () => {
     ball.style.transform = `scale(${Math.random()})`;
     ball.style.width = `${Math.random()}em`;
     ball.style.height = ball.style.width;
+
+
   
   balls.push(ball);
   document.body.append(ball);

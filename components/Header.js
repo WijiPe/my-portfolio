@@ -4,6 +4,7 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import { makeStyles, StylesContext } from '@mui/styles';
 import Link from 'next/link';
+import Button from '@mui/material/Button';
 
 // const scroll2El = elID => {
 //     window.scrollTo({
@@ -27,6 +28,7 @@ const useStyles = makeStyles((theme) => {
         appbar:{
             position: "fixed",
             height: 45,
+            
         },
         minHeight: {
             minHeight: 45,
@@ -34,12 +36,13 @@ const useStyles = makeStyles((theme) => {
     }
 })
 
+
 export default function Header() {
     
     const classes = useStyles();
     return (
         <Box>
-            <AppBar className={classes.appbar} style={{backgroundColor:'#F85F36', color: 'black'}}>
+            <AppBar className={classes.appbar}  sx={{backgroundColor:'#FF8303', color: '#1B1A17'}}>
                 <Toolbar className={classes.minHeight} sx={{  
                     display: 'flex', 
                     flexDirection: 'row',  
@@ -47,21 +50,22 @@ export default function Header() {
                     gap: 10,
                     height: 40,
                 }}>
-                    <Typography variant="h6" component="div">
-                        <Link href="#section1">
-                            <a >about me</a>
+                    <Typography variant="h6" component="div"  sx={{ fontWeight: 600, fontFamily: 'monospace' }}>
+                        <Link href="#section1" >
+                            <a>about me</a>
                         </Link>
                     </Typography>
-                    <Typography variant="h6" component="div">
+                    <Typography variant="h6" component="div"  sx={{ fontWeight: 600, fontFamily: 'monospace'}}>
                         <Link href="#section2" >
                             <a>my project</a>
                         </Link>
                     </Typography>
-                    <Typography variant="h6" component="div">
-                        <Link href="#section3" >
+                    {/* <Typography variant="h6" component="div" sx={{ fontWeight: 600, fontFamily: 'monospace' }}> */}
+                        {/* <Link href="#section3" >
                             <a>contact me</a>
-                        </Link>
-                    </Typography>
+                        </Link> */}
+                        <Button className={classes.Button} sx={{ fontWeight: 600, fontFamily: 'monospace' }} href="#section3">contact me</Button>
+                    {/* </Typography> */}
                 </Toolbar>
             </AppBar>
         </Box>

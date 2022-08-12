@@ -1,32 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400&family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Red+Hat+Display:wght@300&display=swap');
+
+.image{
+  border-radius: 100%;
+  position: absolute;
+  z-index: 'tooltip';
+}
+.details{
+  border: solid 2px #FF8303;
+  border-radius: 100%;
+  z-index: -1;
+  position: absolute;
+  /* margin-left: 5px;  */
+  /* margin-top: 30px; */
+  padding: 70px;
+  width: 550px;
+  height: 550px;
+}
 
 .container1 {
-  font-family:'Secular One';
-  /* font-size: 30px; */
-  /* margin: 0 auto; */
-}
+  width: 170px;
+  height: 170px;
+  margin-top: 70px;
+  margin-left: 300px;
+  border-radius: 100%;
+  background-color:#FF8303;
+} 
 
 .container2 {
   /* margin: 0 auto; */
-  /* margin-top: 200px; */
+  margin-left: 70px;
   /* padding: 0.5rem 0.5rem; */
-  font-size: 45px;
-  font-family:'Secular One';
+  font-size: 50px;
+  font-family: 'Archivo Black', sans-serif;
   /* border: 1.5px solid #FCBC0F; */
-  width: 600px;
+  width: 370px;
+  font-weight: 900;
+  color:#787878;
+  margin-top: 150px;
 }
 
 .container3 {
-  /* margin: 0 auto; */
+  /* margin-left: 40px; */
+  margin-top: 230px;
   /* margin-top: 200px; */
   /* padding: 5rem 5rem; */
-  font-size: 25px;
-  font-family:'Secular One';
+  font-size: 20px;
+  font-family: 'Red Hat Display', sans-serif;
   /* border: 1.5px solid #FCBC0F; */
-  width: 600px;
+  width: 400px;
   color:#787878;
 }
-.round{
-  border-radius: 100%;
-}
+
 
