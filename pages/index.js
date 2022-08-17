@@ -2,6 +2,8 @@ import styles from '../styles/Home.module.css';
 import Box from '@mui/material/Box';
 import Image from 'next/image';
 import Layout from '../components/Layout';
+import Head from 'next/head';
+import Myproject from '@/components/Myproject';
 
 const mouseOver = () => {
 
@@ -33,6 +35,15 @@ export default function Home() {
 
   return (
     <Layout>
+      <Head>
+        <title>Wiji's Portfolio</title>
+        <meta name="description" content="Wijitra Stevens's Portfolio" />
+        <meta name="keywords" content="search, keywords, go, here" />
+        {/* <link rel="icon" href="/favicon.ico"/>       */}
+      </Head>
+      <Head>
+        <meta property="og:title" content="My new title" key="title" />
+      </Head>
       <Box 
         sx={{
           boxShadow: 3,
@@ -45,7 +56,7 @@ export default function Home() {
           pl:20,
           // m: 15,
           mt: 10,
-          ml: 23,
+          ml: 15,
           // textAlign: 'center',
           // fontSize: '1rem',
           fontWeight: '700',
@@ -77,7 +88,6 @@ export default function Home() {
 
       <Box id="section1"
         sx={{
-          boxShadow: 3,
           width: '100%',
           height: '30rem',
           // bgcolor: (theme) => (theme.palette.mode === 'dark' ? '#101010' : '#212121'),
@@ -101,7 +111,6 @@ export default function Home() {
       </Box>
       <Box id="section2"
         sx={{
-          boxShadow: 3,
           width: '100%',
           height: '30rem',
           // bgcolor: (theme) => (theme.palette.mode === 'dark' ? '#101010' : '#212121'),
@@ -122,10 +131,10 @@ export default function Home() {
         }}
       >
         my project
+        <Myproject  />
       </Box>
       <Box id="section3"
         sx={{
-          boxShadow: 3,
           width: '100%',
           height: '30rem',
           // bgcolor: (theme) => (theme.palette.mode === 'dark' ? '#101010' : '#212121'),

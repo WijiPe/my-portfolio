@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Red+Hat+Display:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300&display=swap');
 
 .image{
   border-radius: 100%;
@@ -21,7 +21,7 @@
   width: 170px;
   height: 170px;
   margin-top: 70px;
-  margin-left: 300px;
+  margin-left: 280px;
   border-radius: 100%;
   background-color:#FF8303;
 } 
@@ -31,7 +31,7 @@
   margin-left: 70px;
   /* padding: 0.5rem 0.5rem; */
   font-size: 50px;
-  font-family: 'Archivo Black', sans-serif;
+  font-family: 'Albert Sans', sans-serif;
   /* border: 1.5px solid #FCBC0F; */
   width: 370px;
   font-weight: 900;
@@ -41,11 +41,11 @@
 
 .container3 {
   /* margin-left: 40px; */
-  margin-top: 230px;
+  margin-top: 170px;
   /* margin-top: 200px; */
   /* padding: 5rem 5rem; */
   font-size: 20px;
-  font-family: 'Red Hat Display', sans-serif;
+  font-family: 'Albert Sans', sans-serif;
   /* border: 1.5px solid #FCBC0F; */
   width: 400px;
   color:#787878;

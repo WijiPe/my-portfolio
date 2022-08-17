@@ -6,6 +6,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   scroll-behavior: smooth;
+  background-blend-mode: lighten;
 }
 a {
   color: inherit;
@@ -23,6 +24,7 @@ a {
   body {
     color: white;
     background: black;
+    background: radial-gradient(rgb(27, 27, 27), black);
   }
 }
 
