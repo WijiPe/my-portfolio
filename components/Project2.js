@@ -2,22 +2,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Box from '@mui/material/Box';
 import { Typography } from '@mui/material';
-import { makeStyles } from '@mui/styles';
-
-// const useStyles = makeStyles((theme) => {
-//     return{
-//         img:{
-//             opacity: 0.4,
-//             '&:hover': {
-//                 opacity: 1,              
-//             },
-//         },
-//     }
-// })
 
 export default function Project2() {
-
-    // const classes = useStyles();
 
     return (
         <Typography
@@ -25,19 +11,18 @@ export default function Project2() {
             variant="body1"
             style={{
                 width: '80rem',
-                height: '35rem',
+                height: '40rem',
                 position: 'relative',
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems:"center",
-
             }}
         >
             <Box
                 sx={{
                     width: '30rem',
                     height: '30rem',
-                    bgcolor: '#787878',
+                    // bgcolor: '#787878',
                     mt: 16,
                     mr: 45,
                     borderRadius: '50%',

@@ -14,7 +14,7 @@ export default function Project1() {
             variant="body1"
             style={{
                 width: '80rem',
-                height: '35rem',
+                height: '40rem',
                 position: 'relative',
                 display: 'flex',
                 flexDirection: 'column',
@@ -25,7 +25,7 @@ export default function Project1() {
                 sx={{
                     width: '30rem',
                     height: '30rem',
-                    bgcolor: '#787878',
+                    // bgcolor: '#787878',
                     mt: 16,
                     ml: 50,
                     borderRadius: '50%',

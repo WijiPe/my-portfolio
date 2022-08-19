@@ -1,5 +1,5 @@
 import Box from '@mui/material/Box';
-import { makeStyles, StylesContext } from '@mui/styles';
+import { makeStyles } from '@mui/styles';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
@@ -23,16 +23,22 @@ import Navbar from './Navbar';
 // goto="section1" onClick={onBtnClick}
 
 const links = {'#section1':'about me', '#section2':'my project', '#section3':'contact me'}
+
 const useStyles = makeStyles((theme) => {
     return{
         appbar:{
             position: "fixed",
             height: 45,
-            
         },
         minHeight: {
             minHeight: 45,
         },
+        clickableLink: {
+            color: '#F0E3CA',
+            '&:hover': {
+            color: '#FF8303',
+            },
+        }
     }
 })
 
@@ -42,7 +48,7 @@ export default function Header() {
 
     return (
         <Box>
-            <AppBar className={classes.appbar}  sx={{backgroundColor:'rgb(00, 00, 00)', color: '#787878'}}>
+            <AppBar className={classes.appbar}  sx={{backgroundColor:'rgb(0, 00, 00)', color: '#787878'}}>
                 <Toolbar className={classes.minHeight} sx={{  
                     display: 'flex', 
                     flexDirection: 'row',  
@@ -51,8 +57,14 @@ export default function Header() {
                     height: 40,
                 }}>
                     {Object.keys(links).map((link, i) => (
-                        <Typography variant="h6" component="div"  sx={{ fontWeight: 600, fontFamily: 'monospace' }}>
-                            <Navbar key = {i} title = {links[link]} id={link}/>
+                        <Typography 
+                            variant="h6" component="div"  
+                            sx={{ 
+                                fontWeight: 600, 
+                                fontFamily: 'monospace' 
+                            }} 
+                            className={classes.clickableLink}>
+                            <Navbar  key = {i} title = {links[link]} id={link}/>
                         </Typography>
                     ))}
                 </Toolbar>
