@@ -1,9 +1,7 @@
-import styles from '@/styles/Index.module.css';
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Layout from '@/components/Layout';
 import Head from 'next/head';
-import Myproject from '@/components/Section2';
 import Me from '@/components/Me';
 import Section1 from '@/components/Section1';
 import Section2 from '@/components/Section2';
@@ -50,7 +48,6 @@ export default function Home() {
         contact Me
       </Box>
       </Stack>
-        
     </Layout>
   )
 }

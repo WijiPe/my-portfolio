@@ -1,59 +1,55 @@
 import '../styles/globals.css'
 import {useEffect} from 'react'
 
-const showBall = () => {
+// const showBall = () => {
 
-  // const colors = ["#2AA7FF", "#1B1B1B", "#FCBC0F","#F85F36"];
-  const colors = ["#A35709", "#FF8303", "#F0E3CA", "#787878"];
-  // const colors = ["#787878", "#04293A", "#064663", "#ECB365"];
-
-  const numBalls = 30;
-  const balls = [];
-
-  for (let i = 0; i < numBalls; i++) {
-    let ball = document.createElement("div");
-    ball.classList.add("ball");
-    ball.style.background = colors[Math.floor(Math.random() * colors.length)];
-    ball.style.left = `${Math.floor(Math.random() * 100)}vw`;
-    ball.style.top = `${Math.floor(Math.random() * 100)}vh`;
-    ball.style.transform = `scale(${Math.random()})`;
-    ball.style.width = `${Math.random()}em`;
-    ball.style.height = ball.style.width;
-
-
+//   const colors = ["#A35709", "#FF8303", "#F0E3CA", "#787878"];
   
-  balls.push(ball);
-  document.body.append(ball);
-  }
+//   const numBalls = 30;
+//   const balls = [];
 
-// Keyframes
-balls.forEach((el, i, ra) => {
-  let to = {
-    x: Math.random() * (i % 2 === 0 ? -11 : 11),
-    y: Math.random() * 12
-  };
+//   for (let i = 0; i < numBalls; i++) {
+//     let ball = document.createElement("div");
+//     ball.classList.add("ball");
+//     ball.style.background = colors[Math.floor(Math.random() * colors.length)];
+//     ball.style.left = `${Math.floor(Math.random() * 100)}vw`;
+//     ball.style.top = `${Math.floor(Math.random() * 100)}vh`;
+//     ball.style.transform = `scale(${Math.random()})`;
+//     ball.style.width = `${Math.random()}em`;
+//     ball.style.height = ball.style.width;
 
-  let anim = el.animate(
-    [
-      { transform: "translate(0, 0)" },
-      { transform: `translate(${to.x}rem, ${to.y}rem)` }
-    ],
-    {
-      duration: (Math.random() + 1) * 2000, // random duration
-      direction: "alternate",
-      fill: "both",
-      iterations: Infinity,
-      easing: "ease-in-out"
-    }
-  );
-});
-}
+//   balls.push(ball);
+//   document.body.append(ball);
+//   }
+
+// // Keyframes
+// balls.forEach((el, i, ra) => {
+//   let to = {
+//     x: Math.random() * (i % 2 === 0 ? -11 : 11),
+//     y: Math.random() * 12
+//   };
+
+//   let anim = el.animate(
+//     [
+//       { transform: "translate(0, 0)" },
+//       { transform: `translate(${to.x}rem, ${to.y}rem)` }
+//     ],
+//     {
+//       duration: (Math.random() + 1) * 2000, // random duration
+//       direction: "alternate",
+//       fill: "both",
+//       iterations: Infinity,
+//       easing: "ease-in-out"
+//     }
+//   );
+// });
+// }
 
 function MyApp({ Component, pageProps }) {  
 
-  useEffect(()=> {
-    showBall()
-  }, [])
+  // useEffect(()=> {
+  //   showBall()
+  // }, [])
 
   return <Component {...pageProps} />
     

@@ -25,29 +25,17 @@ const mouseOut = () => {
 export default function Me() {
     return (
         <div>
-
-
         <Box 
             sx={{
                 width: '100%',
                 height: '24rem',
-          // bgcolor: (theme) => (theme.palette.mode === 'dark' ? '#101010' : '#212121'),
-          // color: (theme) =>
-          // theme.palette.mode === 'dark' ? 'grey.300' : 'grey.800',
                 p: 10,
                 pl:20,
-          // m: 15,
                 mt: 10,
                 ml: 25,
-          // textAlign: 'center',
-          // fontSize: '1rem',
                 fontWeight: '700',
-          // border: 1,
-          // position: 'relative',
                 display: 'flex',
-          // flexDirection: 'row',
-          // justifyContent: 'center',
-          // gap: 10
+                letterSpacing: 2
             }}
         >
             <h2 className={styles.container2} id= "word1" onMouseOver = {mouseOver} onMouseOut={mouseOut}> 

@@ -3,8 +3,6 @@ import { makeStyles, StylesContext } from '@mui/styles';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import Link from 'next/link';
-import Button from '@mui/material/Button';
 import Navbar from './Navbar';
 
 // const scroll2El = elID => {

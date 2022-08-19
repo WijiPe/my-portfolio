@@ -6,7 +6,7 @@
   /* z-index: 'tooltip';  */
 }
 .details{
-  border: solid 2px #FF8303;
+  border: solid 2px #A35709;
   border-radius: 100%;
   /* z-index: -1; */
   position: absolute;
@@ -28,7 +28,7 @@
   margin-top: 1%;
   margin-left: 22%;
   border-radius: 100%;
-  background-color:#FF8303;
+  background-color:#A35709;
 } 
 
 .container2 {
@@ -60,7 +60,7 @@
   /* width: 400px; */
   width: 25rem;
   color:#787878;
-  background-color:black;
+  background-color:rgb(13,13,13);
 }
 
 
