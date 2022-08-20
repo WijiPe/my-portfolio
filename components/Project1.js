@@ -57,7 +57,8 @@ export default function Project1() {
                     sx={{ 
                         color: '#787878', 
                         letterSpacing: 6,  
-                    }}>
+                    }}
+                >
                     <h2>Projects_________________</h2>
                 </Box>
                 <h3>MyWatchlist!</h3>

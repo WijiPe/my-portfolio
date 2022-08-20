@@ -11,16 +11,23 @@ export default function Header() {
 
     return (
         <Box>
-            <AppBar sx={{backgroundColor:'rgb(0, 00, 00)', color: '#787878', position: "fixed",
-            height: 45,}}>
-                <Toolbar  sx={{  
-                    display: 'flex', 
-                    flexDirection: 'row',  
-                    justifyContent: 'flex-end', 
-                    gap: 5,
-                    height: 40,
-                    minHeight: 45,
-                }}>
+            <AppBar 
+                sx={{
+                    backgroundColor:'rgb(0, 00, 00)', 
+                    color: '#787878', 
+                    position: "fixed", 
+                    minHeight: 60
+                }}
+            >
+                <Toolbar  
+                    sx={{  
+                        display: 'flex', 
+                        flexDirection: 'row',  
+                        justifyContent: 'flex-end',
+                        align:"center",
+                        gap: 5
+                    }}
+                >
                     {Object.keys(links).map((link, i) => (
                         <Typography 
                             variant="h6" component="div"  

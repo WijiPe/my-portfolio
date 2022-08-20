@@ -25,8 +25,6 @@ export default function Me() {
                 height: '35rem',
                 position: 'relative',
                 display: 'flex',
-                // flexDirection: 'column',
-                // alignItems:"center",
             }}
         >
             <Box 
@@ -53,7 +51,6 @@ export default function Me() {
                     sx={{
                         width: '20rem',
                         height: '5rem',
-                        // ml: 10,
                         mt: 15,
                         fontSize: 20,
                         fontFamily: 'Albert Sans',
