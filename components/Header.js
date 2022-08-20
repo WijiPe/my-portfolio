@@ -14,9 +14,8 @@ export default function Header() {
             <AppBar 
                 sx={{
                     backgroundColor:'rgb(0, 00, 00)', 
-                    color: '#787878', 
                     position: "fixed", 
-                    minHeight: 60
+                    minHeight: 60,
                 }}
             >
                 <Toolbar  
@@ -33,8 +32,8 @@ export default function Header() {
                             variant="h6" component="div"  
                             sx={{ 
                                 fontWeight: 600, 
-                                fontFamily: 'monospace',
-                                color: '#F0E3CA',
+                                fontFamily: 'Albert Sans',
+                                color: '#787878',
                                 '&:hover': {
                                 color: '#FF8303', 
                                 }
@@ -43,7 +42,22 @@ export default function Header() {
                             <Navlink key = {i} title = {links[link]} id={link}/>
                         </Typography>
                     ))}
-                    <Button variant="contained">Resume</Button>
+                    <Button 
+                        variant="outline" 
+                        sx={{
+                            fontWeight: 600, 
+                            fontFamily: 'Albert Sans',
+                            color: '#787878',
+                            border: 2,                        
+                            '&:hover': {
+                            backgroundColor: "#A35709",
+                            color: '#FF8303',
+                            border: 2 
+                            }
+                        }}
+                    >
+                        Resume
+                    </Button>
                 </Toolbar>
             </AppBar>
         </Box>

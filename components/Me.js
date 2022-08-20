@@ -88,7 +88,8 @@ export default function Me() {
                     mt:5,
                 }}
             >
-                <Image src='/images/IMG_4452.jpg'
+                <Image 
+                    src='/images/IMG_4452.jpg'
                     width = {230}
                     height={230}
                     className={styles.image} 
@@ -101,14 +102,15 @@ export default function Me() {
                     borderRadius: '50%',
                     mt:57,
                     ml:50,
-                    pl:8.7,
+                    pl:8.5,
                     pt:3,
                     bgcolor: '#A35709',
                     display: 'flex',
                     flexDirection: 'column',
                     gap: 2,
-                    borderColor: '#A35709',
                     position: 'absolute',
+                    border:2,
+                    color:'#FF8303'
                 }}>
                     <GitHubIcon 
                         onClick={event =>  window.location.href='https://github.com/WijiPe'}

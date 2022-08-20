@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300&display=swap');
 
+
 .image{
   border-radius: 100%;
-}
-
-
-
+  filter: grayscale(50%);
+  -webkit-filter: grayscale(50%);
+  }
+  
+  .image:hover{
+  filter: grayscale(0%);
+  filter: gray;
+  -webkit-filter: grayscale(0%);
+  filter: none;
+  transition: 1s ease;
+  }
