@@ -5,21 +5,16 @@ import { Typography } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import MailIcon from '@mui/icons-material/Mail';
-import { makeStyles } from '@mui/styles';
 import Divider from '@mui/material/Divider';
-
-const useStyles = makeStyles((theme) => ({
-    clickableIcon: {
-      color: '#101010',
-      '&:hover': {
-      color: '#FF8303',
-      },
-    }
-  }));
 
 export default function Me() {
 
-    const classes = useStyles();
+    const iconStyle = {
+            color: '#101010',
+            '&:hover': {
+            color: '#FF8303',
+        },
+    };
 
     return (
         <Typography
@@ -120,25 +115,22 @@ export default function Me() {
                 }}>
                     <GitHubIcon 
                         onClick={event =>  window.location.href='https://github.com/WijiPe'}
-                        className={classes.clickableIcon}
-                        sx={{ 
-                            color: '101010',
-                        }}
+                        sx={
+                            iconStyle
+                        }
                     />
                     <LinkedInIcon  
                         onClick={event =>  window.location.href='https://www.linkedin.com/in/wijitra-stevens-475b7684/'}
-                        className={classes.clickableIcon}
-                        sx={{ 
-                            color: '101010',
-                        }}
+                        sx={
+                            iconStyle
+                        }
                     />
                     <MailIcon 
                         onClick={event =>  window.location.href='mailto:peawseaw@gmail.com?subject=I saw your portfolio!'} 
                         target="_blank"
-                        className={classes.clickableIcon}
-                        sx={{ 
-                            color: '101010' 
-                        }}
+                        sx={
+                            iconStyle
+                        }
                     />
             </Box>
         </Typography>
