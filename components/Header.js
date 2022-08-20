@@ -47,12 +47,12 @@ export default function Header() {
                         sx={{
                             fontWeight: 600, 
                             fontFamily: 'Albert Sans',
-                            color: '#787878',
+                            color: '#FF8303',
+                            backgroundColor: "#A35709",
                             border: 2,                        
                             '&:hover': {
-                            backgroundColor: "#A35709",
-                            color: '#FF8303',
-                            border: 2 
+                            backgroundColor: "rgb(0, 00, 00)",
+                            color: '#787878',
                             }
                         }}
                     >

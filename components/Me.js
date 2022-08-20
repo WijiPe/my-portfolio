@@ -84,8 +84,8 @@ export default function Me() {
             <Box                 
                 sx={{
                     position: 'absolute',
-                    ml:90,
-                    mt:5,
+                    ml: 90,
+                    mt: 5,
                 }}
             >
                 <Image 

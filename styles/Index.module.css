@@ -3,8 +3,8 @@
 
 .image{
   border-radius: 100%;
-  filter: grayscale(50%);
-  -webkit-filter: grayscale(50%);
+  filter: grayscale(60%);
+  -webkit-filter: grayscale(60%);
   }
   
   .image:hover{
