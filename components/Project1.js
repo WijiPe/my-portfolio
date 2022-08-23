@@ -24,11 +24,11 @@ export default function Project1() {
             <Box
                 sx={{
                     width: '30rem',
-                    height: '30rem',
+                    height: '20rem',
                     // bgcolor: '#787878',
                     mt: 16,
                     ml: 50,
-                    borderRadius: '50%',
+                    // borderRadius: '50%',
                     border: 2,
                     position: 'absolute',
                     display: 'flex',
@@ -49,17 +49,17 @@ export default function Project1() {
                     mr: 50,
                     fontFamily: 'Albert Sans',
                     color: '#F0E3CA',
-                    letterSpacing: 3,
+                    // letterSpacing: 3,
                 }}
             >   
                 <Box   
                     component="span" 
                     sx={{ 
-                        color: '#787878', 
-                        letterSpacing: 6,  
+                        color: '#FF8303',
+                        fontSize: 20
                     }}
                 >
-                    <h2>Projects_________________</h2>
+                    <h2>Projects</h2>
                 </Box>
                 <h3>MyWatchlist!</h3>
                 <Box
@@ -79,7 +79,12 @@ export default function Project1() {
                         </a>
                     </Link>
                 </Box>
-                <Box component="span" sx={{ color: '#787878', letterSpacing: 2 }}>
+                <Box 
+                    component="span" 
+                    sx={{ 
+                        color: '#787878', 
+                        letterSpacing: 1 
+                    }}>
                     <h5>Python MySQL MovieDB-API</h5>
                 </Box>
             </Box>

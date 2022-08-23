@@ -1,6 +1,4 @@
-import styles from '@/styles/Index.module.css';
 import Box from '@mui/material/Box';
-import Image from 'next/image';
 import { Typography } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -31,9 +29,10 @@ export default function Me() {
                 sx={{
                     width: '30rem',
                     height: '30rem',
-                    pl: 10,
+                    pt: 16,
+                    pl: 9,
                     mt: 10,
-                    ml: 50,
+                    ml: 55,
                     fontWeight: '700',
                     display: 'flex',
                     flexDirection: 'column',
@@ -46,13 +45,12 @@ export default function Me() {
                         color: '#FF8303',
                     }
                 }}
-            >
+            >   
                 <Box
                     sx={{
-                        width: '20rem',
+                        width: '25rem',
                         height: '5rem',
-                        mt: 15,
-                        fontSize: 20,
+                        fontSize: 30,
                         fontFamily: 'Albert Sans',
                         '&:hover': {
                             color: '#FF8303',
@@ -65,43 +63,27 @@ export default function Me() {
                     <Box   
                         component="span"               
                         sx={{
-                            width: '20rem',
                             bgcolor:'#0D0D0D',
                             fontFamily: 'Albert Sans',
                             color: '#787878',
-                            fontSize: 10,
+                            fontSize: 15,
                             '&:hover': {
                                 color: '#787878',
                             },
                         }}
                     >
-                        <h2> A full of joy and happiness mother who loves to be part of the tech world.
-                        I try to <span id= "word4">stack</span> the knowledge of the codes to create the best <span id= "word5">web</span>site and become a great <span id= "word6">developer!</span>
-                    </h2>
+                        <h2> A full stack web developer. </h2>
                     </Box>
                 </Box>
             </Box>
-            <Box                 
-                sx={{
-                    position: 'absolute',
-                    ml: 90,
-                    mt: 5,
-                }}
-            >
-                <Image 
-                    src='/images/IMG_4452.jpg'
-                    width = {230}
-                    height={230}
-                    className={styles.image} 
-                />
-            </Box>
+            
             <Box 
                 sx={{
                     width: '10rem',
                     height: '10rem',
                     borderRadius: '50%',
                     mt:57,
-                    ml:50,
+                    ml:55,
                     pl:8.5,
                     pt:3,
                     bgcolor: '#A35709',

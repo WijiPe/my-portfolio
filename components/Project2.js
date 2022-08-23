@@ -21,27 +21,22 @@ export default function Project2() {
             <Box
                 sx={{
                     width: '30rem',
-                    height: '30rem',
-                    // bgcolor: '#787878',
+                    height: '20rem',
                     mt: 16,
                     mr: 45,
-                    borderRadius: '50%',
                     border: 2,
                     position: 'absolute',
                     display: 'flex',
                     pl: 25,
                     pt: 10,
-                    // zIndex: 'modal',
                     fontFamily: 'Albert Sans',
                     color: '#787878',
-                    // borderColor: '#A35709'
                 }}
             >
                 <h5>Details</h5>
             </Box>
             <Box
                 sx={{
-                    // zIndex: 'tooltip',
                     mt: 22,
                     ml: 55,
                     fontFamily: 'Albert Sans',
@@ -78,7 +73,7 @@ export default function Project2() {
                     component="span" 
                     sx={{ 
                         color: '#787878', 
-                        letterSpacing: 2, 
+                        letterSpacing: 1, 
                         textAlign: 'right'
                     }}>
                         <h5>React Node MovieDB-API Material Ui</h5>

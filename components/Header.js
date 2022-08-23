@@ -32,6 +32,7 @@ export default function Header() {
                             variant="h6" component="div"  
                             sx={{ 
                                 fontWeight: 600, 
+                                fontSize: 18,
                                 fontFamily: 'Albert Sans',
                                 color: '#787878',
                                 '&:hover': {
@@ -62,4 +63,4 @@ export default function Header() {
             </AppBar>
         </Box>
     );
-}
+}   

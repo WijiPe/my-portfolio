@@ -24,7 +24,6 @@ export default function Home() {
         <Me />
         <Section1 />
         <Section2  />
-
       <Box id="section3"
         sx={{
           width: '100%',
