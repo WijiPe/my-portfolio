@@ -8,6 +8,8 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 
+const techs = ['javascript', 'python', 'java', 'react', 'mySQL']
+
 
 export default function Section1() {
     return (
@@ -15,27 +17,30 @@ export default function Section1() {
             <Box 
                 id="section1"
                 sx={{
-                    width: '100%',
+                    // width: '100%',
                     height: '50rem',
                     color: '#787878',
                     p: 10,
                     mt: 30,
-                    itemAlign: 'center',
+                    // itemAlign: 'center',
                     fontWeight: '700',
                     position: 'relative',
-                    display: 'flex',
-                    flexDirection: 'row',
-                    justifyContent: 'center',
+                    // position: 'absolute',
+                    // display: 'flex',
+                    // flexDirection: 'row',
+                    // justifyContent: 'center',
                     gap:10
                 }}
             >
                 <Box
                     sx={{
-                        width: '35rem',
+                        width: '32rem',
                         height: '15rem',
                         fontSize: 18,
                         display: 'flex',
                         flexDirection: 'column',
+                        ml: 15,
+                        position: 'absolute',
                     }}
                 > 
                     <Box   
@@ -59,37 +64,33 @@ export default function Section1() {
                         sx={{
                             display: 'flex',
                             fontSize: 15,
-                            gap:10
+                            gap:10,
                         }}
                     >
-                        <Grid item xs={12} md={3}>
-                            <List>
-                                <ListItem>
-                                    <ListItemIcon>
-                                        <ArrowRightIcon                         
-                                            sx={{ 
-                                                color: '#FF8303' 
-                                            }}
-                                        />
-                                    </ListItemIcon>
-                                    <ListItemText
-                                    />
-                                    Hello
-                                </ListItem>
-                                <ListItem>
-                                    <ListItemIcon>
-                                        <ArrowRightIcon />
-                                    </ListItemIcon>
-                                    <ListItemText
-                                    />
-                                    Hello
-                                </ListItem>
-                            </List>
+                        <Grid container xs={12}>
+                            {techs.map((tech, i) => (
+                                <List>
+                                    <ListItem sx={{ width: '10rem', maxWidth: 360}}>
+                                        <ListItemIcon>
+                                            <ArrowRightIcon                         
+                                                sx={{ 
+                                                    color: '#FF8303' 
+                                                }}
+                                            />
+                                        </ListItemIcon>
+                                        {tech}
+                                    </ListItem>
+                                </List>
+                            ))}  
                         </Grid>
                     </Box>
                 </Box>
-                
-                <Box>
+                <Box
+                    sx={{
+                        position: 'absolute',
+                        ml: 90
+                    }}
+                    >
                     <Image 
                         src='/images/IMG_4452.jpg'
                         width = {300}

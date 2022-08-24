@@ -38,7 +38,7 @@ export default function Me() {
                     flexDirection: 'column',
                     letterSpacing: 2,
                     border: 2,
-                    position: 'absolute',
+                    // position: 'absolute',
                     borderRadius: '50%',
                     color:'#787878',
                     '&:hover': {
